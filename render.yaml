@@ -5,10 +5,7 @@ services:
     plan: free
     region: frankfurt
     rootDir: server
-    buildCommand: "npm run build:all"
+    buildCommand: "NPM_CONFIG_PRODUCTION=false npm run build:all"
     startCommand: "npm run start"
     healthCheckPath: "/api/health"
     autoDeploy: true
-    envVars:
-      - key: NODE_ENV
-        value: production
