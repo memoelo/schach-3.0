@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schach – v3</title>
+    <style>
+      html, body, #root { height: 100%; margin: 0; background: #0f172a; color: #e2e8f0; }
+      .container { display: grid; grid-template-columns: 1fr 320px; gap: 12px; height: 100%; padding: 12px; }
+      .sidebar { background: #111827; border: 1px solid #1f2937; border-radius: 12px; padding: 12px; overflow: auto; }
+      .card { background: #0b1220; border: 1px solid #1f2937; border-radius: 12px; padding: 12px; }
+      .toolbar { display: flex; gap: 8px; align-items: center; }
+      .btn { background: #1f2937; border: 1px solid #334155; color: #e2e8f0; padding: 8px 12px; border-radius: 8px; cursor: pointer; }
+      .btn.primary { background: #2563eb; border-color: #1d4ed8; }
+      .evalbar { width: 20px; border-radius: 8px; background: linear-gradient(#e5e7eb, #111827); position: relative; }
+      .evalbar .marker { position: absolute; left: 0; right: 0; height: 2px; background: #22c55e; }
+      .badge { background: #1f2937; border: 1px solid #334155; padding: 4px 8px; border-radius: 999px; font-size: 12px; }
+      .row { display: flex; gap: 8px; align-items: center; }
+      .hidden { display: none; }
+      a { color: #93c5fd; }
+      input[type=range] { accent-color: #2563eb; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
